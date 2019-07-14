@@ -1,0 +1,11 @@
+.account-container {
+    display: flexbox;
+}
+
+.account-address {
+    color: #efefef;
+}
+
+.account-balance {
+    color: var(--base-font-color);
+}

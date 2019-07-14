@@ -1,0 +1,89 @@
+:root {
+  --base-background-color: #2d5f73;
+  --base-color: #fff;
+  --base-font-size: 16px;
+  --base-highlight-color: #fff;
+  --base-item-size: 50px;
+}
+
+/*** Main styles ***/
+.splitter {
+  background-color: var(--base-background-color);
+  color: var(--base-color);
+  min-height: 100vh;
+  text-align: center;
+}
+
+.splitter-logo {
+  pointer-events: none;
+}
+
+.splitter-content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.splitter-footer {
+  border-top: 1px var(--base-color) solid;
+  font-size: var(--base-font-size);
+  padding-top: var(--base-font-size);
+}
+
+.splitter-footer-logo {
+  width: calc(var(--base-item-size) * 0.8);
+}
+
+.splitter-link {
+  color: #61dafb;
+}
+
+/*** Grid layout ***/
+.grid-wrapper {
+  display: grid;
+}
+
+.item {
+  width: calc(var(--base-item-size)*2);
+  font-size: var(--base-font-size);
+}
+
+.sub-item {
+  font-size: calc(var(--base-font-size)*0.8);
+}
+
+.item-logo {
+  width: calc(var(--base-item-size)*1.5);
+}
+
+.item-head {
+  grid-area: alice;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.item-middle {
+  grid-area: splitter;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.item-foot-left {
+  grid-area: bob;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.item-foot-right {
+  grid-area: carol;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}

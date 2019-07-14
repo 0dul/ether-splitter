@@ -1,0 +1,6 @@
+.avatar {
+    vertical-align: middle;
+    width: var(--base-item-size);
+    height: var(--base-item-size);
+    border-radius: 50%;
+}
